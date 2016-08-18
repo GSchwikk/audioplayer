@@ -19,16 +19,18 @@
         <div ng-controller="PlayerController">
           <ul id="programs_list" class="">
             <li ng-repeat="program in programs">
-              <span npr-link play='play(program)' ng-model="program"></span>
+              <npr-link ng-model="program" player="player"></npr-link>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="large-4 small-4 columns" ng-controller="RelatedController">
-        <h2>Related content</h2>
-      </div>
-    </div>
+		<div class="large-4 small-4 columns" ng-controller="RelatedController">
+		  <h2>Related content</h2>
+		  <ul id="related">
+		    <li ng-repeat="s in related"><a href=""></a></li>
+		  </ul>
+		</div>
 
     <script>
       document.write('<script src=js/vendor/'
